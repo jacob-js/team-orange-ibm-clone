@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'ibm';
-  src: url('https://ibmix.de/wp-content/themes/ibmix/dist/961087b433b4b7063420.woff2');
+  font-family: ibm;
+  src: url('/fonts/regular.woff2');
 }
 
 @font-face {
@@ -25,8 +25,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 1920px) {
+  .hero {
+    padding-left: calc(((100% - 1280px) / 2) + calc(1280px * 0.0625));
+  }
+  .hero__img{
+    padding-right: calc(((100% - 1280px) / 2) + calc(1280px * 0.0625));
+  }
+}
+
+.hero__pat{
+  animation: hero-pat 2s ease-in-out infinite;
+}
+
+/* @keyframes hero-pat {
+  0%{
+    transform: none;
+  }
+  50%{
+    transform: scale(1.05);
+    opacity: 0.5;
+  }
+  100%{
+    transform: none;
+    opacity: 1;
+  }
+} */
+
 @layer components {
   body{
-    @apply font-ibm
+    @apply font-ibm overflow-x-hidden
+  }
+  .content-wrapper{
+    @apply w-5/6 mx-auto
   }
 }
