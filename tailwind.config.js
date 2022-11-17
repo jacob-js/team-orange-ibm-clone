@@ -14,6 +14,9 @@ module.exports = {
         darkgray: "#8d8d8d",
         lightgray: "#393939",
       },
+      fontFamily: {
+        'ibm': "'ibm','Helvetica Neue',Arial,sans-serif"
+      }
     },
   },
   plugins: [],

@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'ibm';
+  src: url('https://ibmix.de/wp-content/themes/ibmix/dist/961087b433b4b7063420.woff2');
+}
+
+@font-face {
+  font-family: 'ibm';
+  src: url('https://ibmix.de/wp-content/themes/ibmix/dist/065ce362e60f5c3e8265.woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'ibm';
+  src: url('https://ibmix.de/wp-content/themes/ibmix/dist/fd06abd0e3c77ec51188.woff2');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ibm';
+  src: url('https://ibmix.de/wp-content/themes/ibmix/dist/d149c7d042e440679ee4.woff2');
+  font-weight: bold;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  body{
+    @apply font-ibm
+  }
+}
